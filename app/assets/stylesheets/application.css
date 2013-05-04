@@ -14,8 +14,14 @@
 
 body {
     padding-top: 40px;
+    
 }
 
 .alert {
     margin-top: 10px;
+}
+
+.page-header h1{
+    font-size: xx-large;
+    color: #82ce79;
 }

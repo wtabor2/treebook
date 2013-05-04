@@ -4364,12 +4364,22 @@ input[type="submit"].btn.btn-mini {
   min-height: 40px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #fafafa;
+  /*
+   *Bootstrap original navbar Background
+  background-color: #fafafa; 81b1ff
   background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
   background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
   background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
   background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  */
+  background-color: #81b1ff; 
+  background-image: -moz-linear-gradient(top, #a5c8ff, #0d3a81);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a5c8ff), to(#0d3a81));
+  background-image: -webkit-linear-gradient(top, #a5c8ff, #0d3a81);
+  background-image: -o-linear-gradient(top, #a5c8ff, #0d3a81);
+  background-image: linear-gradient(to bottom, #a5c8ff, #0d3a81);
+  
   background-repeat: repeat-x;
   border: 1px solid #d4d4d4;
   -webkit-border-radius: 4px;
@@ -4409,8 +4419,8 @@ input[type="submit"].btn.btn-mini {
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
-  color: #777777;
-  text-shadow: 0 1px 0 #ffffff;
+  color: #ffffff;
+  /*text-shadow: 0 1px 0 #ffffff;*/
 }
 
 .navbar .brand:hover,
@@ -4604,9 +4614,9 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a {
   float: none;
   padding: 10px 15px 10px;
-  color: #777777;
+  color: #FFFFFF;
   text-decoration: none;
-  text-shadow: 0 1px 0 #ffffff;
+  /*text-shadow: 0 1px 0 #ffffff;*/
 }
 
 .navbar .nav .dropdown-toggle .caret {
