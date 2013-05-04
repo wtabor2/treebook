@@ -5,3 +5,9 @@ ren:
   profile_name: "wtabor2"
   #password: "password"
   #password_confirmation: "password"
+  
+jackson:
+  first_name: "Jackson"
+  last_name: "Dooshbag"
+  email: "dogsdonthaveemail.com"
+  profile_name: "jackdaddy"  
