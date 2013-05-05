@@ -25,3 +25,24 @@ body {
     font-size: xx-large;
     color: #82ce79;
 }
+
+.footer {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-top: solid 1px #82ce79;
+    background: #a5c8ff;
+    color: #8c8c8d;  
+}
+
+.footer-links{
+    margin-left: 5px;
+}
+
+.footer-ref{
+    text-align: right;
+    margin-right: 5px;
+}
+
+.footer-sponser{
+    text-align: center;
+}

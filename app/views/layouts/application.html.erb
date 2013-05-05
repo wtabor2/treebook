@@ -29,6 +29,7 @@
   </div>
   
   <div class="container">
+    
       <% flash.each do |type, message| %>
         <div class="alert <%= flash_class type %>">
           <button class="close" data-dismiss="alert">x</button>
@@ -38,6 +39,30 @@
    
     <%= yield %>
   </div>
+  
+ 
+    <div class="footer">
+      <tr>
+          <td>
+            <div class="footer-links">
+              <small>Home | My Statuses | Help</small>
+            </div>
+          </td>
+          <td>
+            <div class="footer-ref">
+              <small>All rights reserved by GazetteTape Inc.</small>
+            </div>
+          </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="footer-sponser">
+            <small><strong>Powered by Treehouse and Heroku</strong></small>
+          </div>
+        </td>
+      </tr>
+    </div>
+  
   
 </body>
 </html>
