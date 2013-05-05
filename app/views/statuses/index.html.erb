@@ -10,7 +10,7 @@
   </div>
 </div>
 
-<%= link_to "Post a New Status", new_status_path, class: "btn btn-success" %>
+<%= link_to "Post a New Status", new_status_path, class: "btn btn-inverse" %>
 
 
 <div class="row-fluid">
@@ -22,7 +22,7 @@
           <div class="span1">
             <%= image_tag status.user.gravatar_url %>
           </div>
-          <div class="span7">
+          <div class="span8">
             <strong><%= status.user.full_name %></strong>
             <p> <%= status.content %> </p>
             <div class="meta">
@@ -40,13 +40,17 @@
       
   </div>
   <div class="span3">
-    <div class="sidebar-main well">
-      <h4>Sidebar
-      <small>Subtext That describes sidebar</small>
-      </h4>
-      <br>Link
-      <br>Link
-      <br>Link
+    <div class="sidebar-main well-sidebar">
+      <div class="sidebar-title">
+        <h4>Sidebar</h4>
+      </div>
+      <div class="sidebar-body">
+        <ul>
+          <li><a href="#">Link</a>
+          <li><a href="#">Link</a>
+          <li><a href="#">Link</a>
+        </ul>
+      </div>
     </div>
   </div>
-</div> 
+</div>

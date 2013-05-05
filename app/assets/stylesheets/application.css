@@ -26,15 +26,31 @@ body {
     color: #82ce79;
 }
 
-.sidebar-main{
-    /*background: #97befb;*/
+.sidebar-title{
+    border-bottom: solid 1px #bababa;
+    color: #fb7830;
+}
+
+.sidebar-body{
+    margin-top: 5px;
+}
+
+.sidebar-body li {
+    color: #bababa;
+}
+
+.sidebar-body a {
+    color: #5a5edb;
+}
+
+.sidebar-body a:hover{
+    color: #fb7830;
 }
 
 .footer {
     margin-top: 40px;
-    margin-bottom: 10px;
-    border-top: solid 1px #82ce79;
-    background: #a5c8ff;
+    border-top: solid 1px #a5c8ff;
+    background: #d9f4d5;
     color: #8c8c8d;  
 }
 
@@ -49,4 +65,5 @@ body {
 
 .footer-sponser{
     text-align: center;
+    margin-bottom: 10px;
 }
