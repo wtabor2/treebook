@@ -9,4 +9,9 @@ class ProfilesController < ApplicationController
       render file: 'public/404', status: 404, formats: [:html]
     end
   end
+  
+  def edit
+    @user = User.find_by_profile_name(params[:id])
+  end
+  
 end

@@ -46,4 +46,5 @@ class UserTest < ActiveSupport::TestCase
     assert user.valid?
     
   end
+  
 end

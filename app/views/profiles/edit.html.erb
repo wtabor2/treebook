@@ -1,0 +1,19 @@
+<h1>Editing Profile</h1>
+  <div class="page-header">
+   <h1><%= current_user.full_name %></h1>
+  </div>
+  <%= @user.full_name %>
+
+  
+  <%= simple_form_for(:user, :html => { :method => :put }) do |f| %>
+ 
+   <div>
+     <%= f.label :books %><br />
+     <%= f.text_field :books %>
+   </div>
+   
+   <div><%= f.submit "Submit Changes" %></div>
+
+<% end %>
+  
+  <p><%= link_to "My Profile", user_show_path %>

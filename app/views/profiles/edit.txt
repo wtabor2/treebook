@@ -1,0 +1,31 @@
+<h1>Editing Profile</h1>
+  <div class="page-header">
+   <h1><%= current_user.full_name %></h1>
+  </div>
+
+ <%= simple_form_for(:user) do |f| %>
+
+   
+   "This is :user"
+   <p><%= :user %>
+   <p> "This is @user"
+   <p><%= @user %>
+   <p> "This is current_user"
+   <p><%= current_user %>
+   <p>"This is @user.to_s.humanize"
+   <p><%= @user.to_s.humanize %>
+   
+   <div>
+     <%= f.label :books %><br />
+     <%= f.text_field :books %>
+   </div>
+   
+   
+   
+   <div><%= f.submit "Submit Changes" %></div>
+
+<% end %>
+
+<a href="/<%= current_user.profile_name %>">My Status</a>
+
+<!--<%= link_to 'Back', statuses_path %> -- :url => profile_edit_path -->

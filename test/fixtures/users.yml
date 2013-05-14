@@ -5,6 +5,7 @@ ren:
   profile_name: "wtabor2"
   #password: "password"
   #password_confirmation: "password"
+  #hobbies: "baseball"
   
 jackson:
   first_name: "Jackson"

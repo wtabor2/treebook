@@ -45,7 +45,12 @@
       <tr>
           <td>
             <div class="footer-links">
-              <small><a href="#">Home</a> | <a href="#">My Statuses</a> | <a href="#">Help</a></small>
+              <small><a href="#">Home</a> | <% if user_signed_in? %>
+                                              <a href="/<%= current_user.profile_name %>">My Status</a>
+                                            <% else %>
+                                              Not Logged In
+                                            <% end %>
+                                            | <a href="#">Help</a></small>
             </div>
           </td>
           <td>
@@ -62,7 +67,6 @@
         </td>
       </tr>
     </div>
-  
-  
+            
 </body>
 </html>

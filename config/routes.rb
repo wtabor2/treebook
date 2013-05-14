@@ -1,5 +1,6 @@
 Treebook::Application.routes.draw do
-  get "profiles/show"
+  
+ 
 
   devise_for :users
   
@@ -9,13 +10,30 @@ Treebook::Application.routes.draw do
     get 'logout', to: 'devise/sessions#destroy', as: :logout
   end
 
-  resources :statuses
+  
+  resources :statuses, :path_names => { :new => "creates" }, :path => 'updates'
+  
   get 'feed', to: 'statuses#index', as: :feed
   root to: 'statuses#index'
   
-  get '/:id', to: 'profiles#show'
-
-
+  
+  #Profiles Folder
+ 
+  get "profiles/show"
+  get 'profiles/edit'
+  post 'profiles/edit'
+  put 'profiles/edit'
+  
+  get '/:id', to: 'profiles#show', as: :user_show
+  get '/:id/edit', to: 'profiles#edit', as: :user_edit
+  post '/:id/edit', to: 'profiles#edit', as: :user_edit
+  put '/:id/edit', to: 'profiles#edit', as: :user_edit
+  
+  #get 'profile_edit', to: 'profiles#show_edit'
+  #post 'profile_edit', to: 'profiles#show_edit'
+  
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
