@@ -1,3 +1,4 @@
+<!--not currently used on the website-->
 <h1>Editing Profile</h1>
   <div class="page-header">
    <h1><%= current_user.full_name %></h1>
@@ -5,7 +6,7 @@
   <%= @user.full_name %>
 
   
-  <%= simple_form_for(:user, :html => { :method => :put }) do |f| %>
+  <%= simple_form_for(:id, :url => user_edit_path, :html => { :method => :put }) do |f| %>
  
    <div>
      <%= f.label :books %><br />

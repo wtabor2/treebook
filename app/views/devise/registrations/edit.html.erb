@@ -3,10 +3,30 @@
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
 
-  <%= resource %>
-  <%= resource_name %>
-  <%= resource_name.to_s %>
-  <%= resource_name.to_s.humanize %>
+  <div>
+     <%= f.label :hobbies %><br />
+     <%= f.text_field :hobbies %>
+   </div>
+  
+  <div>
+     <%= f.label :movies %><br />
+     <%= f.text_field :movies %>
+   </div>
+  
+  <div>
+     <%= f.label :bands %><br />
+     <%= f.text_field :bands %>
+   </div>
+  
+  <div>
+     <%= f.label :tv_shows %><br />
+     <%= f.text_field :tv_shows %>
+   </div>
+  
+  <div>
+     <%= f.label :books %><br />
+     <%= f.text_field :books %>
+   </div>
   
   
   <div><%= f.label :email %><br />
@@ -16,6 +36,7 @@
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
   
+    
   <div><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
   <%= f.password_field :password, :autocomplete => "off" %></div>
 

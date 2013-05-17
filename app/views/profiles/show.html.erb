@@ -1,18 +1,17 @@
 <div class="page-header">
   <h1><%= @user.full_name %></h1>
   <div class="profile-edit">
-    <%= link_to "Edit Profile", user_edit_path, class: "btn btn-primary" %>
+    <%= link_to "Edit Profile", edit_user_registration_path, class: "btn btn-primary" %>
   </div>
 </div>
 
-<%= @user %>
-<p><%= current_user.to_yaml%>
+
 <div class="About">
   <h4><p>Hobbies: <%=current_user.hobbies %>
-  <p>Favorite Movies:
-  <p>Favorite Bands:
-  <p>Favorite TV Shows:
-  <p>Favorite Books:</h4>
+  <p>Favorite Movies: <%=current_user.movies %>
+  <p>Favorite Bands: <%=current_user.bands %>
+  <p>Favorite TV Shows: <%=current_user.tv_shows %>
+  <p>Favorite Books: <%=current_user.books %></h4>
 </div>
 
 <% if @statuses %>

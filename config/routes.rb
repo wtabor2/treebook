@@ -25,6 +25,8 @@ Treebook::Application.routes.draw do
   put 'profiles/edit'
   
   get '/:id', to: 'profiles#show', as: :user_show
+  post '/:id', to: 'profiles#show', as: :user_show
+  put '/:id', to: 'profiles#show', as: :user_show
   get '/:id/edit', to: 'profiles#edit', as: :user_edit
   post '/:id/edit', to: 'profiles#edit', as: :user_edit
   put '/:id/edit', to: 'profiles#edit', as: :user_edit

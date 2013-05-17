@@ -12,6 +12,14 @@ class ProfilesController < ApplicationController
   
   def edit
     @user = User.find_by_profile_name(params[:id])
+    
+    if @user
+      @user.update_attributes(params[:user])
+    #  render :notice => "Meeting Updated"
+    #else
+    #  redirect_to user_show_path, :notice => "Meeting Updated"
+    end
+    
   end
   
 end

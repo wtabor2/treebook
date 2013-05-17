@@ -29,3 +29,5 @@
 <a href="/<%= current_user.profile_name %>">My Status</a>
 
 <!--<%= link_to 'Back', statuses_path %> -- :url => profile_edit_path -->
+
+, :html => { :method => :put }
