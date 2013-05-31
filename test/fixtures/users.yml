@@ -11,4 +11,10 @@ jackson:
   first_name: "Jackson"
   last_name: "Dooshbag"
   email: "dogsdonthaveemail.com"
-  profile_name: "jackdaddy"  
+  profile_name: "jackdaddy"
+  
+mike:
+  first_name: "Mike"
+  last_name: "The Frog"
+  email: "mike@gmail.com"
+  profile_name: "mikethefrog"  
